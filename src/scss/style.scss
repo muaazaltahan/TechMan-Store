@@ -1,0 +1,176 @@
+/* For All Views */
+@font-face {
+  font-family: glacialindifference;
+  src: url('../assets/glacialindifference.otf');
+}
+html{
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 50px 0;
+  height: 100%;
+  background-image: linear-gradient(30deg ,#222 , #777, #222);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: glacialindifference;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 55px;
+  overflow: hidden;
+  z-index: 8;
+  a{
+    &:hover,&.router-link-exact-active{
+      .nav-item {
+        background: #999;
+        img{
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+    .nav-item{
+      height: 100%;
+      width: 55px;
+      height: 55px;
+      border-radius: 20px;
+      padding: 7px;
+      float: left;
+      transition: background 0.2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 32px;
+        height: 32px;
+        transition: width 0.2s, height 0.2s;
+      }
+    }
+  }
+}
+
+a{
+  color: #bf5;
+  text-decoration: none;
+}
+
+.search-form{
+  width: 250px;
+  height: 40px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  input{
+    width: 80%;
+    height: 100%;
+    float: left;
+  }
+  button{
+    padding: 3px;
+    background: #777;
+    transition: background 0.2s;
+    border: none;
+    width: 20%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    &:hover,&:focus{
+      background: #999;
+    }
+    img{
+      width: 80%;
+      height: 100%;
+    }
+  }
+}
+
+.sidebar-toggler{
+  font-size: 35px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: #777;
+  transition: background 0.2s;
+  z-index: 9;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 0 0 5px;
+  &:hover,&:focus{
+    background: #999;
+  }
+}
+#sidebar{
+  width: 0;
+  height: 100%;
+  z-index: 8;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  transition: width 0.3s;
+  overflow: auto;
+  background: #222c;
+  .list{
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+    .title{
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+    }
+    .items{
+      padding: 5px;
+      .pd{
+        cursor: pointer;
+        background: none;
+        .pd-name{
+          font-size: 18px;
+          .price{
+            color: #bf5;
+          }
+        }
+        .pd-img{
+          width: 200px;
+          max-height: 200px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+.social{
+  width: 37px;
+  height: 37px;
+  margin: 5px;
+  transition: width 0.2s, height 0.2s;
+  &:hover{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#content{
+  transition: width 0.3s;
+  width: 100%;
+}
+
+@media screen and (min-width: 1001px) {
+  #sidebar{
+    background: #222;
+  }
+}
+
+@import url('./home.scss');
+@import url('./about.scss');
+@import url('./products.scss');

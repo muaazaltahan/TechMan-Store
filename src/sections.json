@@ -1,0 +1,30 @@
+[
+  {
+    "id":0,
+    "name":"Computers",
+    "image":"computers.jpg",
+    "desc":"Explore Our Computers. Best Prices & Best Powers",
+    "url":"computer-hardware"
+  },
+  {
+    "id":1,
+    "name":"Mobiles",
+    "image":"mobiles.jpg",
+    "desc":"Explore Our Mobiles. Best Prices & From All Companies",
+    "url":"mobiles"
+  },
+  {
+    "id":2,
+    "name":"Playstations",
+    "image":"ps.jpg",
+    "desc":"Explore Our Playstations. Best Prices & All Types",
+    "url":"playstation"
+  },
+  {
+    "id":3,
+    "name":"Watches",
+    "image":"watches.jpg",
+    "desc":"Explore Our Electronic Watches. Best Prices & Best Abilities",
+    "url":"electronic-watches"
+  }
+]

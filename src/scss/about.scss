@@ -1,0 +1,55 @@
+.store-info{
+  width: 95%;
+  background: #0005;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  .s-name{
+    font-size: 26px;
+    img{
+      width: 200px;
+    }
+  }
+}
+
+.who-am-i{
+  width: 90%;
+  background: #0005;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  .info{
+    float: left;
+    font-size: 20px;
+    width: 250px;
+    margin: 5px 10px;
+    text-align: center;
+  }
+  .skills{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .h{
+      width: 100%;
+      font-size: 22px;
+      background: #888;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .skill{
+      float: left;
+      margin: 10px;
+      background: #fff;
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 10px;
+    }
+  }
+}
